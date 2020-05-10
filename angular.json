@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-github": {
+    "kitchenmagic": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-github",
+            "outputPath": "dist/kitchenmagic",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-github:build"
+            "browserTarget": "kitchenmagic:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-github:build:production"
+              "browserTarget": "kitchenmagic:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-github:build"
+            "browserTarget": "kitchenmagic:build"
           }
         },
         "test": {
@@ -118,20 +118,22 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-github:serve"
+            "devServerTarget": "kitchenmagic:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-github:serve:production"
+              "devServerTarget": "kitchenmagic:serve:production"
             }
           }
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "kitchenmagic"
+          }
         }
       }
     }
   },
-  "defaultProject": "angular-github"
+  "defaultProject": "kitchenmagic"
 }
