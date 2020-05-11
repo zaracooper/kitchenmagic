@@ -7,7 +7,7 @@ import { LostComponent } from './lost/lost.component';
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: '404', component: LostComponent },
-    { path: '**', redirectTo: '404', pathMatch: 'full' }
+    { path: '**', redirectTo: '/404'}
 ];
 
 @NgModule({
