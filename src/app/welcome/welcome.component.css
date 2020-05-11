@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
     margin: auto;
     text-align: center;
@@ -9,12 +10,7 @@
 }
 
 @media (min-width: 992px) { 
-    #welcome-sct{
-        justify-content: center;
-        flex-grow: 1;
-        width: 75%;
-        text-align: center;
-        margin: auto;
-        height: 100%;
+    #welcome-txt{
+        width: 50% !important;
     }
 }
