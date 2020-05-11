@@ -1,0 +1,28 @@
+<div id="header-sct" class="d-flex flex-column w-100 p-3">
+    <div class="d-flex p-1">
+        <a class="d-flex flex-row">
+            <h3>Kitchen</h3>
+            <h3 class="font-weight-light">Magic</h3>
+        </a>
+        <div id="nav-sm">
+            <div class="dropdown">
+                <button class="btn bg-transparent text-light" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <button *ngFor='let menuItem of menuItems' class="dropdown-item">{{menuItem}}</button>
+                </div>
+            </div>
+        </div>
+        <div id="nav-lg">
+            <button *ngFor='let menuItem of menuItems' class="border-0 font-weight-bold align-self-end mr-2 btn btn-outline-light">{{menuItem}}</button>
+        </div>
+        <div id="contact">
+            <button class="btn font-weight-bold btn-warning">
+                Contact
+                <i class="far fa-comment-dots pl-2 fa-lg"></i>
+            </button>
+        </div>
+    </div>
+</div>
