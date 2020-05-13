@@ -9,6 +9,10 @@
     height: 100%;
 }
 
+#welcome-txt{
+    width: 85% !important;
+}
+
 @media (min-width: 992px) { 
     #welcome-txt{
         width: 50% !important;
