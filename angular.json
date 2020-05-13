@@ -127,10 +127,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "kitchenmagic"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
