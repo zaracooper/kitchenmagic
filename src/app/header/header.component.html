@@ -11,12 +11,13 @@
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <button *ngFor='let menuItem of menuItems' class="dropdown-item">{{menuItem}}</button>
+                    <button *ngFor='let menuItem of menuItems' class="dropdown-item" routerLink='/404'>{{menuItem}}</button>
+                    <button class="dropdown-item" routerLink='/404'>Contact</button>
                 </div>
             </div>
         </div>
         <div id="nav-lg">
-            <button *ngFor='let menuItem of menuItems' class="border-0 font-weight-bold align-self-end mr-2 btn btn-outline-light">{{menuItem}}</button>
+            <button *ngFor='let menuItem of menuItems' class="border-0 font-weight-bold align-self-end mr-2 btn btn-outline-light" routerLink='/404'>{{menuItem}}</button>
         </div>
         <div id="contact">
             <button class="btn font-weight-bold btn-warning">

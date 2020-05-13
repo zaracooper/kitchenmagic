@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  menuItems = ['About Us','Menu','Reservation','News and Events','Gallery'];
+  menuItems =  ['About Us','Menu','Reservation','News and Events','Gallery'];
 
   constructor() { }
 
