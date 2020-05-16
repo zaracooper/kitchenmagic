@@ -1,29 +1,24 @@
-<div id="header-sct" class="d-flex flex-column w-100 p-3">
-    <div class="d-flex p-1">
-        <a class="d-flex flex-row">
-            <h3>Kitchen</h3>
-            <h3 class="font-weight-light">Magic</h3>
-        </a>
-        <div id="nav-sm">
-            <div class="dropdown">
-                <button class="btn bg-transparent text-light" type="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <button *ngFor='let menuItem of menuItems' class="dropdown-item" routerLink='/404'>{{menuItem}}</button>
-                    <button class="dropdown-item" routerLink='/404'>Contact</button>
-                </div>
-            </div>
-        </div>
-        <div id="nav-lg">
-            <button *ngFor='let menuItem of menuItems' class="border-0 font-weight-bold align-self-end mr-2 btn btn-outline-light" routerLink='/404'>{{menuItem}}</button>
-        </div>
-        <div id="contact">
-            <button class="btn font-weight-bold btn-warning">
-                Contact
-                <i class="far fa-comment-dots pl-2 fa-lg"></i>
-            </button>
-        </div>
+<div id="header-sct">
+    <a id="site-name">
+        <h1>Kitchen</h1>
+        <h1>Magic</h1>
+    </a>
+    <div id="nav-sm">
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button *ngFor='let menuItem of menuItems' mat-menu-item outerLink='/404'>{{menuItem}}</button>
+            <button mat-menu-item outerLink='/404'>Contact</button>
+        </mat-menu>
+    </div>
+    <div id="nav-lg">
+        <button *ngFor='let menuItem of menuItems' mat-button class='menu-button' routerLink='/404'>{{menuItem}}</button>
+    </div>
+    <div id="contact">
+        <button mat-flat-button color="accent">
+            Contact
+            <mat-icon>send</mat-icon>
+        </button>
     </div>
 </div>

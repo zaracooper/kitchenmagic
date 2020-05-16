@@ -2,6 +2,11 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
+    align-items: flex-start !important;
+}
+
+#nav-sm button{
+    vertical-align: top;
 }
 
 #nav-lg{
@@ -10,6 +15,17 @@
 
 #contact{
     display: none;
+}
+
+#header-sct {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+#site-name{
+    display: flex;
+    flex-direction: row;
 }
 
 @media (min-width: 992px) { 
@@ -26,5 +42,14 @@
     #contact{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+
+    #contact button mat-icon{
+        margin-left: 0.5rem;
+    }
+
+    .menu-button{
+        margin-right: 1rem;
     }
 }

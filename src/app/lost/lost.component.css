@@ -1,3 +1,14 @@
 #lost-sct{
     background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text404{
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }

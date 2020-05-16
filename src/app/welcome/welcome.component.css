@@ -13,8 +13,17 @@
     width: 85% !important;
 }
 
+#name {
+    font-size: 2.5rem;
+}
+
 @media (min-width: 992px) { 
     #welcome-txt{
         width: 50% !important;
+    }
+
+    #name {
+        font-size: 4rem;
+        padding: 1rem;
     }
 }
